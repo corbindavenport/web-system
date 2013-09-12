@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mac OS 7</title>
+<link rel="stylesheet" href="resources/stylesheet.css" type="text/css" charset="utf-8" />
+<script type="text/javascript" src="resources/system.js"></script>
+<script type="text/javascript" src="apps/sysapps.js"></script>
+<script type="text/javascript" src="apps/sdk.js"></script>
+</head>
+<body class="desktop" onload="GetMenuItems(); createReadme();">
+<div id="titlebar"><img src="resources/apple.png" style="float:left; padding-top:2px;" /> <ul id="sddm">
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">File</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="javascript:window.print()">Print</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Edit</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">Copy</a>
+        <a href="#">Cut</a>
+        <a href="#">Paste</a>
+        <hr />
+        <a href="#">Import...</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Applications</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m4')" 
+        onmouseout="mclosetime()">Help</a>
+        <div id="m4" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">Download directly</a>
+        <a href="#">Google Code Project</a>
+        </div>
+    </li>
+</ul></div>
+</body>
+</html>

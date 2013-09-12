@@ -1,0 +1,72 @@
+<!--
+Accent JavaScript Browser Version 1.0
+Copyright 2001 by www.CodeLifter.com
+Free for all users; but please leave in this header.
+//-->
+
+<html>
+
+<head>
+<script language="JavaScript">
+
+var bypass=0;
+var bIE = navigator.appName=="Microsoft Internet Explorer";
+function doPopUp(){
+if (bIE){
+doPopUpWindow = window.open("browser.html","George","fullscreen=yes");
+bypass=1;
+}
+}
+function doRePopUp(){
+if (bIE){
+if (bypass>0){
+doPopUpWindow = window.open("browser.html","George","fullscreen=yes");
+doPopUpWindow.focus();
+}
+}
+}
+
+</script>
+
+<title>Accent Browser by CodeLifter.com</title>
+
+</head>
+
+<body bgcolor="#000000" link="#C0C0C0" vlink="#C0C0C0" alink="#C0C0C0" onload="doPopUp()">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+  <tr>
+    <td width="100%" valign="middle" align="center" height="100%">
+    <font color="#C0C0C0" size="3" face="Arial">
+    Accent JavaScript Browser<br>
+    </font>
+    <font color="#C0C0C0" face="Arial" size="2">
+    Version 1.0<br>
+    by</font><br>
+    <font face="Arial" size="2">
+    <a href="http://www.codelifter.com" target="_blank">www.CodeLifter.com</a>
+    </font>
+    <font color="#C0C0C0" size="3" face="Arial">
+    <br>
+    <br>
+    w e l c o m e
+    </font>
+    <br>
+    <br>
+    <font color="#777777" size="2" face="Arial">
+    Requires Microsoft Internet Explorer
+    <br>
+    JavaScript Enabled
+    </font>
+    <br>
+    <br>
+    <font size="2" face="Arial">
+    <a href="javascript:doRePopUp()">launch browser</a>
+    </font>
+    </td>
+  </tr>
+</table>
+</center>
+</body>
+
+</html>
